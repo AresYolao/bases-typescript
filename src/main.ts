@@ -1,4 +1,4 @@
-import {age,templateString} from './bases/01-types.ts';
+import {charmander} from './bases/06-decorators2.ts';
 import {pokemons} from './bases/02-objects.ts';
 import './style.css'
 import typescriptLogo from './typescript.svg'
@@ -13,7 +13,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
-    <h1>${pokemons}</h1>
+    <h1>${charmander.id} ${charmander.name}</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
